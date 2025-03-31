@@ -63,7 +63,6 @@ def get_file_tree(branch="main"):
     else:
         return {"error": f"Failed to fetch file tree: {response.status_code}"}
 
-
 # Route to fetch latest commits
 @app.route('/get-latest-code', methods=['GET'])
 def fetch_code():
